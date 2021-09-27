@@ -1,3 +1,6 @@
+
+#### nginx pod exmpale
+```
 ---
 apiVersion: v1
 kind: Pod
@@ -7,3 +10,20 @@ spec:
   containers:
     - name: nginx-container
       image: nginx:1.21.1
+ 
+```
+
+
+#### Jenkins pod example
+
+```
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-jenkins-pod
+spec:
+  containers:
+    - name: jenkins
+      image: jenkins/jenkins:jdk11
+```
